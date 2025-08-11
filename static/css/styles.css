@@ -1,0 +1,251 @@
+/* Custom styles for Code Auto Documenter */
+
+.code-preview {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.progress-bar {
+    transition: width 0.3s ease;
+}
+
+.file-drop-zone {
+    transition: all 0.3s ease;
+}
+
+.file-drop-zone.dragover {
+    border-color: #5D5CDE;
+    background-color: rgba(93, 92, 222, 0.1);
+}
+
+/* Documentation Content Styling */
+.documentation-content {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.documentation-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.documentation-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.25rem;
+}
+
+.documentation-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+.documentation-content h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #6b7280;
+}
+
+.documentation-content p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.documentation-content strong {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.documentation-content em {
+    font-style: italic;
+    color: #6b7280;
+}
+
+.documentation-content code {
+    background-color: #f3f4f6;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.875rem;
+    color: #dc2626;
+}
+
+.documentation-content pre {
+    background-color: #1f2937;
+    color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+    border: 1px solid #374151;
+}
+
+.documentation-content pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.documentation-content ul, .documentation-content ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.documentation-content li {
+    margin-bottom: 0.5rem;
+}
+
+.documentation-content blockquote {
+    border-left: 4px solid #5D5CDE;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    background-color: #f8fafc;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.documentation-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.documentation-content th {
+    background-color: #f3f4f6;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.documentation-content td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.documentation-content tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Dark mode styles */
+.dark .documentation-content {
+    color: #d1d5db;
+}
+
+.dark .documentation-content h1 {
+    color: #f9fafb;
+    border-bottom-color: #4b5563;
+}
+
+.dark .documentation-content h2 {
+    color: #e5e7eb;
+    border-bottom-color: #4b5563;
+}
+
+.dark .documentation-content h3 {
+    color: #d1d5db;
+}
+
+.dark .documentation-content h4 {
+    color: #9ca3af;
+}
+
+.dark .documentation-content strong {
+    color: #f9fafb;
+}
+
+.dark .documentation-content em {
+    color: #9ca3af;
+}
+
+.dark .documentation-content code {
+    background-color: #374151;
+    color: #f87171;
+}
+
+.dark .documentation-content pre {
+    background-color: #111827;
+    border-color: #374151;
+}
+
+.dark .documentation-content blockquote {
+    background-color: #1f2937;
+    border-left-color: #5D5CDE;
+}
+
+.dark .documentation-content table {
+    background-color: #1f2937;
+}
+
+.dark .documentation-content th {
+    background-color: #374151;
+    border-bottom-color: #4b5563;
+}
+
+.dark .documentation-content td {
+    border-bottom-color: #374151;
+}
+
+.dark .documentation-content tr:hover {
+    background-color: #374151;
+}
+
+/* File list styling */
+#fileItems {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+#fileItems::-webkit-scrollbar {
+    width: 6px;
+}
+
+#fileItems::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+#fileItems::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+
+#fileItems::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.dark #fileItems {
+    scrollbar-color: #475569 #1e293b;
+}
+
+.dark #fileItems::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+.dark #fileItems::-webkit-scrollbar-thumb {
+    background: #475569;
+}
+
+.dark #fileItems::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+} 
